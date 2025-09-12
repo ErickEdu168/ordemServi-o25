@@ -49,6 +49,11 @@ public class TelaDeUsuario extends javax.swing.JInternalFrame {
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setTitle("Cadastro de Usuarios");
+
         jLabel2.setText("*Nome");
 
         jLabel3.setText("Fone");

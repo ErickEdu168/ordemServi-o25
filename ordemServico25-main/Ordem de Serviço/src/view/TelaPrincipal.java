@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author clebe
@@ -26,23 +28,156 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        JMNCadastro = new javax.swing.JMenu();
+        JMenuCliente = new javax.swing.JMenuItem();
+        jMenuUsuario = new javax.swing.JMenuItem();
+        jMenuOrdemServico = new javax.swing.JMenuItem();
+        JMNRelatorio = new javax.swing.JMenu();
+        jMenuRelClientes = new javax.swing.JMenuItem();
+        jMenuServicos = new javax.swing.JMenuItem();
+        JMNSobre = new javax.swing.JMenu();
+        JMNSair = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Gestão de Ordem de Serviço");
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 772, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 411, Short.MAX_VALUE)
+        );
+
+        JMNCadastro.setText("Cadastro");
+
+        JMenuCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        JMenuCliente.setText("Cliente");
+        JMenuCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMenuClienteActionPerformed(evt);
+            }
+        });
+        JMNCadastro.add(JMenuCliente);
+
+        jMenuUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuUsuario.setText("Usuario");
+        jMenuUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuUsuarioActionPerformed(evt);
+            }
+        });
+        JMNCadastro.add(jMenuUsuario);
+
+        jMenuOrdemServico.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuOrdemServico.setText("Ordem de Serviço");
+        jMenuOrdemServico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuOrdemServicoActionPerformed(evt);
+            }
+        });
+        JMNCadastro.add(jMenuOrdemServico);
+
+        jMenuBar1.add(JMNCadastro);
+
+        JMNRelatorio.setText("Relatorio");
+
+        jMenuRelClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuRelClientes.setText("Clientes");
+        jMenuRelClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuRelClientesActionPerformed(evt);
+            }
+        });
+        JMNRelatorio.add(jMenuRelClientes);
+
+        jMenuServicos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuServicos.setText("Serviços");
+        jMenuServicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuServicosActionPerformed(evt);
+            }
+        });
+        JMNRelatorio.add(jMenuServicos);
+
+        jMenuBar1.add(JMNRelatorio);
+
+        JMNSobre.setText("Sobre");
+        JMNSobre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JMNSobreMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(JMNSobre);
+
+        JMNSair.setText("Sair");
+        JMNSair.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JMNSairMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(JMNSair);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 149, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 89, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JMenuClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMenuClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMenuClienteActionPerformed
+
+    private void jMenuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuUsuarioActionPerformed
+        TelaUsuario usuario = new TelaUsuario();
+        usuario.setVisible(true);
+        jDesktopPanel.add(usuario);// TODO add your handling code here:
+    }//GEN-LAST:event_jMenuUsuarioActionPerformed
+
+    private void jMenuRelClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuRelClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuRelClientesActionPerformed
+
+    private void jMenuServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuServicosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuServicosActionPerformed
+
+    private void JMNSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JMNSairMouseClicked
+        int resp;
+        resp = JOptionPane.showConfirmDialog(null, "Deseja realmente sair do sistema?", "Atenção", JOptionPane.YES_NO_OPTION);
+        if (resp == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_JMNSairMouseClicked
+
+    private void JMNSobreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JMNSobreMouseClicked
+        TelaSobre tela = new TelaSobre();
+        this.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_JMNSobreMouseClicked
+
+    private void jMenuOrdemServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuOrdemServicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuOrdemServicoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +215,22 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu JMNCadastro;
+    private javax.swing.JMenu JMNRelatorio;
+    private javax.swing.JMenu JMNSair;
+    private javax.swing.JMenu JMNSobre;
+    private javax.swing.JMenuItem JMenuCliente;
+    private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuOrdemServico;
+    private javax.swing.JMenuItem jMenuRelClientes;
+    private javax.swing.JMenuItem jMenuServicos;
+    private javax.swing.JMenuItem jMenuUsuario;
     // End of variables declaration//GEN-END:variables
+
+    private static class TelaUsuario {
+
+        public TelaUsuario() {
+        }
+    }
 }
