@@ -34,8 +34,8 @@ public class ModuloConexao {
             
         } catch (Exception e) {
             //a lihna abaixo server de apoio para esclarecer o erro
-            JOptionPane.showMessageDialog(null,"OPS!!! - Algo de errado aconteceu!!"+e);
-            System.out.println(e);
+//            JOptionPane.showMessageDialog(null,"OPS!!! - Algo de errado aconteceu!!"+e);
+//            System.out.println(e);
             return null;
         }
 
